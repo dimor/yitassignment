@@ -1,0 +1,98 @@
+.card {
+    width: 314px;
+    height: 391px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .img-wrapper {
+    overflow: hidden;
+}
+
+.card img {
+    width: 314px;
+    height: 174px;
+    transition: all .3s;
+    vertical-align: top;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.2);
+}
+
+.img-wrapper{
+    flex: 0 0 174px;
+}
+
+
+.card-wrapper{
+    flex:1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.categoryName {
+    color: white;
+    padding: 0 4%;
+    align-self: flex-start;
+    max-width: 92%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categoryName span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #25262b;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 48px;
+    line-height: 24px;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 66px;
+    word-wrap: break-word ;
+    color: #25262b;
+    overflow: hidden;
+}
+
+.author {
+    color: #777777;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 100%;
+    line-height: 22px;
+    max-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.fieldsUpdater {
+    background-color: #f2f2f2;
+    padding: 20px;
+    direction: rtl;
+    height: 150px;
+}
+
+.fieldsUpdater input[type=text], select {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
